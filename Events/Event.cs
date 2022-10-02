@@ -1,10 +1,6 @@
-﻿// <copyright file="Event.cs" company="Sam Matthews">
-// Copyright (c) Sam Matthews. All rights reserved.
-// </copyright>
-
-namespace Events
+﻿namespace Events
 {
-    public abstract class Event
-    {
-    }
+    using System;
+
+    public abstract record Event(DateTime EventDateTime);
 }
