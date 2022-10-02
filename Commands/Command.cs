@@ -4,7 +4,5 @@
 
 namespace Commands
 {
-    public abstract class Command
-    {
-    }
+    public abstract record Command;
 }

@@ -2,7 +2,7 @@
 {
     using System;
 
-    public record WorkoutRemoved(
+    public record WorkoutCancelled(
             Guid WorkoutId,
             DateTime EventDateTime)
         : Event(EventDateTime);
