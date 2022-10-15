@@ -2,6 +2,8 @@
 {
     using System;
 
-    public record CancelWorkout(Guid WorkoutId)
-        : Command;
+    public record CancelWorkout(
+            Guid UserId,
+            Guid WorkoutId)
+        : Command(UserId);
 }

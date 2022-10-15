@@ -3,7 +3,8 @@
     using System;
 
     public record RemoveExercise(
+            Guid UserId,
             Guid WorkoutId,
             Guid ExerciseId)
-        : Command;
+        : Command(UserId);
 }

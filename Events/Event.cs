@@ -2,5 +2,7 @@
 {
     using System;
 
-    public abstract record Event(DateTime EventDateTime);
+    public abstract record Event(
+        Guid UserId,
+        DateTime EventDateTime);
 }

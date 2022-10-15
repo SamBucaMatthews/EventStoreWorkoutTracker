@@ -2,6 +2,8 @@
 {
     using System;
 
-    public record MarkWorkoutAsNotComplete(Guid WorkoutId)
-        : Command;
+    public record MarkWorkoutAsNotComplete(
+            Guid UserId,
+            Guid WorkoutId)
+        : Command(UserId);
 }

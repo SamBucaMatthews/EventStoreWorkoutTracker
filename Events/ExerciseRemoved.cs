@@ -3,8 +3,9 @@
     using System;
 
     public record ExerciseRemoved(
+            Guid UserId,
             Guid WorkoutId,
             Guid ExerciseId,
             DateTime EventDateTime)
-        : Event(EventDateTime);
+        : Event(UserId, EventDateTime);
 }

@@ -3,7 +3,8 @@
     using System;
 
     public record WorkoutCancelled(
+            Guid UserId,
             Guid WorkoutId,
             DateTime EventDateTime)
-        : Event(EventDateTime);
+        : Event(UserId, EventDateTime);
 }

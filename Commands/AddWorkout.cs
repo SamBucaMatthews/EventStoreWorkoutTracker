@@ -1,4 +1,7 @@
 ﻿namespace Commands
 {
-    public record AddWorkout : Command;
+    using System;
+
+    public record AddWorkout(Guid UserId)
+        : Command(UserId);
 }
